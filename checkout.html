@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FLATICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- sweetalert2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+
+  <body>
+    <!-- START HEADER -->
+    <header class="header">
+      <div class="header-top">
+        <div class="header-container container">
+          <div class="header-contact">
+            <span>+91 8930798542</span>
+            <span>Anurag's Store</span>
+          </div>
+          <p class="header-alert-news">
+            Supet Value Deals - Save More With Coupons
+          </p>
+
+          <a href="login-register.html" class="header-top-action">
+            Log In / Sin Up
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="index.html" class="nav-logo">
+          <img src="image/logo.svg" alt="" class="nav-logo-img" />
+        </a>
+
+        <div class="nav-menu" id="nav-menu">
+          <div class="nav-menu-top">
+            <a href="index.html" class="nav-menu-logo">
+              <img src="image/logo.svg" alt="" />
+            </a>
+
+            <div class="nav-close" id="nav-close">
+              <i class="fi fi-rs-cross-small"></i>
+            </div>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link">Shop</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="accounts.html" class="nav-link">My Accounts</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="compare.html" class="nav-link">Compare</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="login-register.html" class="nav-link">Login</a>
+            </li>
+          </ul>
+
+          <div class="header-search">
+            <input
+              type="text"
+              placeholder="Search For Items..."
+              class="form-input"
+            />
+            <button class="search-btn">
+              <img src="image/search.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="header-user-actions">
+          <a href="wishlist.html" class="header-action-btn">
+            <img src="image/icon-heart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+
+          <a href="cart.html" class="header-action-btn">
+            <img src="image/icon-cart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+
+          <div class="header-action-btn nav-toggle" id="nav-toggle">
+            <img src="image/menu-burger.svg" alt="" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- START MAIN -->
+    <main class="main">
+      <!-- START BREADCRUMB -->
+      <section class="breadcrumb">
+        <ul class="breadcrumd-list flex container">
+          <li><a href="index.html" class="breadcrumd-link">Home</a></li>
+          <li><span class="breadcrumd-link">></span></li>
+          <li><a href="shop.html" class="breadcrumd-link">Shop</a></li>
+          <li><span class="breadcrumd-link">></span></li>
+          <li><span class="breadcrumd-link">checkout</span></li>
+        </ul>
+      </section>
+      <!-- END BREADCRUMB -->
+
+      <!--=============== CHECKOUT ===============-->
+      <section class="checkout section-lg">
+        <div class="checkout-container container grid">
+          <div class="container-group">
+            <h3 class="section-title">Billing Details</h3>
+
+            <form action="" class="form grid">
+              <input type="text" placeholder="Name" class="form-input" />
+              <input type="text" placeholder="Address" class="form-input" />
+              <input type="text" placeholder="City" class="form-input" />
+              <input type="text" placeholder="Country" class="form-input" />
+              <input type="text" placeholder="PostCode" class="form-input" />
+              <input type="text" placeholder="Phone" class="form-input" />
+              <input type="email" placeholder="Email" class="form-input" />
+
+              <h3 class="checkout-title">Additional Information</h3>
+
+              <textarea
+                name=""
+                placeholder="Order note"
+                id=""
+                cols="30"
+                rows="10"
+                class="form-input textarea"
+              ></textarea>
+            </form>
+          </div>
+
+          <div class="checkout-group">
+            <h3 class="section-title">Cart Totals</h3>
+
+            <table class="order-table">
+              <tr>
+                <th colspan="2">Products</th>
+                <th>Total</th>
+              </tr>
+
+              <tr>
+                <td>
+                  <img src="image/product-1-2.jpg" alt="" class="order-img" />
+                </td>
+                <td>
+                  <h3 class="table-title">Yidarton Women Summer Blue</h3>
+                  <p class="table-quantity">x 2</p>
+                </td>
+
+                <td><span class="table-price">$180.00</span></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <img src="image/product-2-1.jpg" alt="" class="order-img" />
+                </td>
+                <td>
+                  <h3 class="table-title">LDB MOON Women Summe</h3>
+                  <p class="table-quantity">x 1</p>
+                </td>
+
+                <td><span class="table-price">$65.00</span></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <img src="image/product-7-1.jpg" alt="" class="order-img" />
+                </td>
+                <td>
+                  <h3 class="table-title">Women's Short Sleeve Loose</h3>
+                  <p class="table-quantity">x 2</p>
+                </td>
+
+                <td><span class="table-price">$35.00</span></td>
+              </tr>
+
+              <tr>
+                <td><span class="order-subtitle">SupTotal</span></td>
+                <td colspan="2"><span class="table-price">$280.00</span></td>
+              </tr>
+
+              <tr>
+                <td><span class="order-subtitle">Shipping</span></td>
+                <td colspan="2">
+                  <span class="table-price">Free Shipping</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td><span class="order-subtitle">Total</span></td>
+                <td colspan="2">
+                  <span class="order-grand-total">$280.00</span>
+                </td>
+              </tr>
+            </table>
+
+            <div class="payment-methods">
+              <h3 class="checkout-title payment-title">Payment</h3>
+
+              <div class="payment-option flex">
+                <input
+                  type="radio"
+                  name="radio"
+                  checked
+                  class="payment-input"
+                />
+                <label for="radio" class="payment-label"
+                  >Direct Bank Transfer</label
+                >
+              </div>
+
+              <div class="payment-option flex">
+                <input type="radio" name="radio" class="payment-input" />
+                <label for="radio" class="payment-label">Check Payment</label>
+              </div>
+
+              <div class="payment-option flex">
+                <input type="radio" name="radio" class="payment-input" />
+                <label for="radio" class="payment-label">Paypal</label>
+              </div>
+            </div>
+
+            <button class="btn btn-md">Place Order</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- START NEWSLETTER -->
+      <!-- END NEWSLETTER -->
+    </main>
+    <!-- END MAIN -->
+
+    <!-- START FOOTER -->
+    <!-- End FOOTER -->
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="JS/main.js"></script>
+  </body>
+</html>

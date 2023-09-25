@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FLATICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- sweetalert2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+
+  <body>
+    <!-- START HEADER -->
+    <header class="header">
+      <div class="header-top">
+        <div class="header-container container">
+          <div class="header-contact">
+            <span>+91 8930798542</span>
+            <span>Anurag' Store</span>
+          </div>
+          <p class="header-alert-news">
+            Supet Value Deals - Save More With Coupons
+          </p>
+
+          <a href="login-register.html" class="header-top-action">
+            Log In / Sin Up
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="index.html" class="nav-logo">
+          <img src="image/logo.svg" alt="" class="nav-logo-img" />
+        </a>
+
+        <div class="nav-menu" id="nav-menu">
+          <div class="nav-menu-top">
+            <a href="index.html" class="nav-menu-logo">
+              <img src="image/logo.svg" alt="" />
+            </a>
+
+            <div class="nav-close" id="nav-close">
+              <i class="fi fi-rs-cross-small"></i>
+            </div>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link">Shop</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="accounts.html" class="nav-link">My Accounts</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="compare.html" class="nav-link">Compare</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="login-register.html" class="nav-link">Login</a>
+            </li>
+          </ul>
+
+          <div class="header-search">
+            <input
+              type="text"
+              placeholder="Search For Items..."
+              class="form-input"
+            />
+            <button class="search-btn">
+              <img src="image/search.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="header-user-actions">
+          <a href="wishlist.html" class="header-action-btn">
+            <img src="image/icon-heart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+
+          <a href="cart.html" class="header-action-btn">
+            <img src="image/icon-cart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+
+          <div class="header-action-btn nav-toggle" id="nav-toggle">
+            <img src="image/menu-burger.svg" alt="" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- START MAIN -->
+    <main class="main">
+      <!-- START BREADCRUMB -->
+      <section class="breadcrumb">
+        <ul class="breadcrumd-list flex container">
+          <li><a href="index.html" class="breadcrumd-link">Home</a></li>
+          <li><span class="breadcrumd-link">></span></li>
+          <li><a href="shop.html" class="breadcrumd-link">Shop</a></li>
+          <li><span class="breadcrumd-link">></span></li>
+          <li><span class="breadcrumd-link">Wishlist</span></li>
+        </ul>
+      </section>
+      <!-- END BREADCRUMB -->
+
+      <!-- START WISHLIST -->
+      <section class="wishlist section-lg container">
+        <div class="table-container">
+          <table class="table">
+            <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Stock Status</th>
+              <th>Action</th>
+              <th>Remove</th>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="image/product-1-2.jpg" alt="" class="table-img" />
+              </td>
+
+              <td>
+                <h3 class="table-title">
+                  J.Crew Mercantile Women's Short-Sleeve
+                </h3>
+                <p class="table-discription">
+                  Best Quality Product at low Price.
+                </p>
+              </td>
+
+              <td><span class="table-price">$110</span></td>
+
+              <td><span class="table-stock">In Stock</span></td>
+
+              <td>
+                <a href="" class="btn btn-sm" onclick="changeCart(event)"
+                  >Add To Cart</a
+                >
+              </td>
+
+              <td>
+                <i
+                  class="fi fi-rs-trash table-trash"
+                  onclick="removeRow(this)"
+                ></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="image/product-7-1.jpg" alt="" class="table-img" />
+              </td>
+
+              <td>
+                <h3 class="table-title">Amazon Essentials Women's Tank</h3>
+                <p class="table-discription">
+                  Best Quality Product at low Price.
+                </p>
+              </td>
+
+              <td><span class="table-price">$110</span></td>
+
+              <td><span class="table-stock">In Stock</span></td>
+
+              <td>
+                <a href="" class="btn btn-sm" onclick="changeCart(event)"
+                  >Add To Cart</a
+                >
+              </td>
+
+              <td>
+                <i
+                  class="fi fi-rs-trash table-trash"
+                  onclick="removeRow(this)"
+                ></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="image/product-2-1.jpg" alt="" class="table-img" />
+              </td>
+
+              <td>
+                <h3 class="table-title">
+                  Amazon Brand - Daily Ritual Women's Jersey
+                </h3>
+                <p class="table-discription">
+                  Best Quality Product at low Price.
+                </p>
+              </td>
+
+              <td><span class="table-price">$110</span></td>
+
+              <td><span class="table-stock">In Stock</span></td>
+
+              <td>
+                <a href="" class="btn btn-sm" onclick="changeCart(event)"
+                  >Add To Cart</a
+                >
+              </td>
+
+              <td>
+                <i
+                  class="fi fi-rs-trash table-trash"
+                  onclick="removeRow(this)"
+                ></i>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <!-- End WISHLIST -->
+
+      <!-- START NEWSLETTER -->
+      <!-- END NEWSLETTER -->
+    </main>
+    <!-- END MAIN -->
+
+    <!-- START FOOTER -->
+    <!-- End FOOTER -->
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="JS/main.js"></script>
+  </body>
+</html>
